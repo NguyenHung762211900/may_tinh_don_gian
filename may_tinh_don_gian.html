@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+    <form>
+        <h1>Caculator</h1>
+        <input type="number" id="so_thu_nhat" value="" />
+        <input type="number" id="so_thu_hai"value=""/>
+        <br><br>
+        <input type="button" onclick="showResult1();" value ="Addition(+)"/>
+        <input type="button" onclick="showResult2();" value ="Subtraction(-)"/>
+        <input type="button" onclick="showResult3();" value ="Multiplication(x)"/>
+        <input type="button" onclick="showResult4();" value = "Division(/)"/>
+    </form>
+    <script>
+        // Phép cộng
+        function showResult1(){   
+                    let a=document.getElementById("so_thu_nhat").value;
+                    a=a*1; 
+                    let b=document.getElementById("so_thu_hai").value;
+                    b=b*1;
+                    let reSult=a+b;
+                    document.write("Result Addition: "+ reSult);
+        }
+        // Phép trừ
+        function showResult2(){   
+                    let a=document.getElementById("so_thu_nhat").value;
+                    a=a*1; 
+                    let b=document.getElementById("so_thu_hai").value;
+                    b=b*1;
+                    let reSult=a-b;
+                    document.write("Result Subtraction: "+ reSult);
+        }
+         // Phép nhân
+         function showResult3(){   
+                    let a=document.getElementById("so_thu_nhat").value;
+                    a=a*1; 
+                    let b=document.getElementById("so_thu_hai").value;
+                    b=b*1;
+                    let reSult=a*b;
+                    document.write("Result Multiplication: "+ reSult);
+        }
+         // Phép chia
+         function showResult4(){   
+                    let a=document.getElementById("so_thu_nhat").value;
+                    a=a*1; 
+                    let b=document.getElementById("so_thu_hai").value;
+                    b=b*1;
+                    let reSult=a/b;
+                    document.write("Result Division: "+ reSult);
+        }
+    </script>
+</body>
+</html>
